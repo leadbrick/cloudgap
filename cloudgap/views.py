@@ -4,7 +4,7 @@ def home(request):
 	return render(request,'home.html')
 
 def to_be_updated(request):
-	return render_to_response(request,"tbu.html")
+	return render_to_response("tbu.html")
 
 #the main fn handling all api calls
 #handles retrieve and update calls
