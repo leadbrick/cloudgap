@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid">
+<h2>
+Please Enter these Details.
+</h2>
+
+<p>Important details required for API calls</p>
+
+<br><br>
+
+<form action="" method="post">
+	{% csrf_token %}
+	<label for="dbname">Your Database Name: </label>
+	<input id="dbname" type="text" name="dbname" value="{{ user.username }}">
+	<br><br>
+	<label for="plan">Your Plan: </label>
+	<input id="plan" type="text" name="plan" value="Free">
+	<br><br>
+	<input type="submit" value="Modify Details">
+</form>
+
+</div>
+
+
+{% endblock %}

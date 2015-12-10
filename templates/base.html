@@ -1,0 +1,43 @@
+<html>
+<!-- Prithviraj Jadhav 2015-->
+	<head>
+
+		<title>Vesuvio</title>
+		
+		<!-- link all CSS files here -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ 
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{%  static "bootstrap.min.css" %}" >
+		<link rel="stylesheet" type="text/css" href="{% static "custom.css" %}" >
+ 
+	</head>
+
+	<body>
+	<!-- Bootstrap nav bar separately written for modularity and easy accessibility-->
+		<div class ="container-full">
+
+	{% include 'navigation.html' %}
+	{% block content %}
+
+	<!-- All the content from the other templates is sent here. Make sure to include "content" block on other templates.-->
+
+	{% endblock %}
+
+		</div> <!--container-full -->
+
+		<div id = "footer">
+			<div class="container">
+				<br>
+    			<p class="text-muted credit pull-right">Vesuvio Beta  ©Copyright 2015</p>
+  			</div>
+		</div>
+
+	</body>
+
+	<!--All Javascript files are loaded at the end after page has completely loaded -->
+	<script src="{% static "jquery-2.1.4.js" %}"></script>
+	<script src="{% static "bootstrap.min.js" %}"></script>
+	<script src="{% static "app.js" %}"></script>
+</html>

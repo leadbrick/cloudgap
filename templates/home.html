@@ -1,0 +1,23 @@
+ {% extends "base.html" %}
+ {% block content %}
+ 
+ <div class="row">
+       
+        <div class="col-lg-12 text-center v-center">
+          
+          <h1>Vesuvio</h1>
+          <h2>Manage Your Database on the Cloud</h2>          
+          <br>
+          <p class= "lead">Use simple REST APIs to manage your database.</p><br>
+          
+          <form action="/register/" method="get" class="col-lg-12">
+            <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
+              <input type="text" class="center-block form-control input-lg" placeholder="Enter Email Id" name="email">
+              <span class="input-group-btn"><input class="btn btn-lg btn-primary" type="submit" value="Sign Up"></span>
+            </div>
+          </form> 
+		    </div>  
+        
+  </div> <!-- /row -->
+	
+{% endblock %}	

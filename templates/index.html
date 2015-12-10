@@ -1,0 +1,84 @@
+<!-- Default landing page-->
+
+{% extends "base.html" %}
+{% block content %}
+
+
+    <div class="row">
+       
+        <div class="col-lg-12 text-center v-center">
+          
+          <h1>LeadBrick Consulting</h1>
+          <p class="lead">Dedicated to helping small and medium enterprises take the tech leap.</p>
+          
+          <br>
+          
+          <form class="col-lg-12">
+            <div class="input-group input-group-lg col-sm-offset-4 col-sm-4">
+              <input type="text" class="center-block form-control input-lg" title="Enter you email." placeholder="Enter your email address">
+              <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
+            </div>
+            <br><button class="btn btn-lg btn-primary" type="button">Learn More</button>
+          </form>
+        </div>
+        
+    </div> <!-- /row -->
+    <br>
+
+    <div class = "social-list">
+      <div class="row">
+        <div class="text-center">
+        <a href="http://facebook.com/leadbrick" class="btn btn-success">Like us on Facebook</a>
+        <a href="http://twitter.com/leadbrick" class="btn btn-success">Twitter</a>
+        <a href="http://plus.google.com/leadbrick" class="btn btn-success">Google+</a>
+        </div> 
+      </div>  
+    </div>
+    <br><br>
+
+    <section id ="tired" >
+    <div style="background-image : url(/static/images/dont_be_tired.jpg);" class="full-img">
+      <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 ">
+                <h2>Designing your own website is tiring.</h2> 
+                <p class="lead">Not to worry ,we are here to help. <br>Colourful ,interactive websites customized<br> to your preferences, designed in a matter of days. </p>
+            </div>
+      </div>    
+    </div>
+    </section>
+
+    <section id ="consumers" >
+    <div style="background-image : url(/static/images/consumers.jpg);" class="full-img">
+      <div class="row">
+            <div class="col-lg-6 col-lg-offset-6">
+                <h2>Reach out to more consumers.<br>Land more business.</h2>
+                <p class = "lead" style="color:#0A0A0A"><strong>Research suggests that an online presence<br>increases sales by almost 50%. So why wait.</strong></p> 
+            </div>
+      </div>    
+    </div>
+    </section>
+
+    <section id ="tired" >
+    <div style="background-image : url(/static/images/stand_out.jpg);" class="full-img">
+      <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 ">
+                <h1 style="color:#036B1D;">Stand Out !n The Crowd.</h2> 
+            </div>
+      </div>    
+    </div>
+    </section>
+
+    <section id ="beautiful" >
+    <div style="background-image : url(/static/images/beautiful_website.jpg);" class="full-img">
+      <div class="row">
+            <div class="col-lg-4 col-lg-offset-8 ">
+                <h2>Stunningly Beautiful Websites</h2>
+                <p class="lead">Our design team consists of the most creative people.</p>
+            </div>
+      </div>    
+    </div>
+    </section>
+
+
+
+{% endblock %}

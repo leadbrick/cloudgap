@@ -1,0 +1,32 @@
+<!-- Prithviraj Jadhav 2015  (Bootstrap included in /static). This file details the nav bar. -->
+<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Vesuvio</a>
+			</div>
+			
+			<div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="/">Home</a></li>
+					<li><a href="/tbu">Blog</a></li>
+					<li><a href="/tbu">Documentation</a></li>
+					<li><a href="/tbu">Tutorials</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					{% if user.is_authenticated %}
+					<li><a data-toggle="dropdown" class="dropdown-toggle">{{user.username}}<span class="caret"></span></a>
+						<ul class="dropdown-menu" >
+							<li><a href = "/logout">Logout</a></li>
+							<li><a href = "/account">Settings</a></li>
+						</ul>
+					</li>
+					{% else %}
+					<li><a href="/login">Sign In</a></li>
+					{% endif %}
+					<li><a href="/contact"><span class="glyphicon glyphicon-phone-alt"></span> Conatct Us</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
